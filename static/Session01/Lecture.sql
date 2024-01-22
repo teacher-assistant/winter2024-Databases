@@ -23,24 +23,23 @@ create table users(
 # How to drop the table?
 drop table users;
 
+# How to insert some data to our table?
+insert into users(first_name, last_name, email, password, country) values ('Omid Reza', 'Heidari', 'omid.orh@gmail.com', 'password1', 'Iran');
+insert into users(first_name, last_name, email, password, country) values ('Ali', 'Amiri', 'ali@gmail.com', 'password2', 'Canada');
+insert into users(first_name, last_name, email, password, country) values ('John', 'Nash', 'nash@gmail.com', 'password3', 'Denmark');
+insert into users(first_name, last_name, email, password, country) values ('Pari', 'Amin', 'pr.am@gmail.com', 'password4', 'Iran');
+insert into users(first_name, last_name, email, password, country) values ('David', 'Ahmad', 'dmp.mmd@gmail.com', 'password5', 'Canada');
+
 # How to retrieve some information from users?
-
-# First lets insert some data to it
-insert into users(first_name, last_name, email, password, country) values ("Omid Reza", "Heidari", "omid.orh@gmail.com", "123", "Iran");
-insert into users(first_name, last_name, email, password, country) values ("Ali", "Amiri", "ali@gmail.com", "123", "Canada");
-insert into users(first_name, last_name, email, password, country) values ("John", "Nash", "nash@gmail.com", "123", "Denmark");
-insert into users(first_name, last_name, email, password, country) values ("Pari", "Amin", "pr.am@gmail.com", "123", "Iran");
-
-# Now, lets select some information
 select users.first_name, users.last_name from users;
 
-# Select All of the rows
+# How to fetch all of the columns once?
 select * from users;
 
-# Custom names for the columns in the output
+# How to rename columns that have been extracted?
+select users.first_name as FName from users;
 select users.first_name as `First Name` from users;
 
-# Unique values?
-select users.country from users;
-select distinct users.country from users;
-
+# How to extract unique values?
+select users.country from users; # How many rows will be showed?
+select distinct users.country from users; # How many rows will be showed now?
