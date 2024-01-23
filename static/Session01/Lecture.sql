@@ -31,15 +31,4 @@ insert into users(first_name, last_name, email, password, country) values ('Pari
 insert into users(first_name, last_name, email, password, country) values ('David', 'Ahmad', 'dmp.mmd@gmail.com', 'password5', 'Canada');
 
 # How to retrieve some information from users?
-select users.first_name, users.last_name from users;
-
-# How to fetch all of the columns once?
 select * from users;
-
-# How to rename columns that have been extracted?
-select users.first_name as FName from users;
-select users.first_name as `First Name` from users;
-
-# How to extract unique values?
-select users.country from users; # How many rows will be showed?
-select distinct users.country from users; # How many rows will be showed now?
