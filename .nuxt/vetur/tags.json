@@ -1,0 +1,14 @@
+{
+  "Calendar": {
+    "description": "Auto imported from components/Calendar.vue"
+  },
+  "MainCard": {
+    "description": "Auto imported from components/MainCard.vue"
+  },
+  "Menu": {
+    "description": "Auto imported from components/Menu.vue"
+  },
+  "News": {
+    "description": "Auto imported from components/News.vue"
+  }
+}

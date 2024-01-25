@@ -1,0 +1,82 @@
+[
+	{
+		"topic":"Introduction to the course, Git and Github",
+		"date":"2022-02-26",
+		"time":{
+			"hour":"16",
+			"minute":"00"
+		},
+		"link":"https://s23.picofile.com/file/8448053418/firstSession2022_02_26.rar.html"
+	},
+	{
+		"topic":"Basics of Python programming",
+		"date":"2022-03-05",
+		"time":{
+			"hour":"16",
+			"minute":"00"
+		},
+		"link":"https://s23.picofile.com/file/8448055884/secondSession_2022_03_05.rar.html"
+	},
+	{
+		"topic":"Functions & Classes in Python",
+		"date":"2022-03-12",
+		"time":{
+			"hour":"16",
+			"minute":"00"
+		},
+		"link":"https://s23.picofile.com/file/8448215292/thirdSession_2022_03_12.rar.html"
+	},
+	{
+		"topic":"Connect Python to PostgreSQL",
+		"date":"2022-04-09",
+		"time":{
+			"hour":"16",
+			"minute":"00"
+		},
+		"link":"https://s22.picofile.com/file/8449008550/fourthSession2022_04_09.rar.html"
+	},
+	{
+		"topic":"Review Questions Of The Fourth Homework",
+		"date":"2022-04-23",
+		"time":{
+			"hour":"16",
+			"minute":"00"
+		},
+		"link":"https://s22.picofile.com/file/8449409976/fifthSession2022_04_23.rar.html"
+	},
+	{
+		"topic":"Review Questions Of The Fifth Homework",
+		"date":"2022-04-30",
+		"time":{
+			"hour":"16",
+			"minute":"00"
+		},
+		"link":"https://s23.picofile.com/file/8449769084/6thSession2022_04_30.rar.html"
+	},
+	{
+		"topic":"Tkinter",
+		"date":"2022-05-14",
+		"time":{
+			"hour":"16",
+			"minute":"00"
+		},
+		"link":"https://s25.picofile.com/file/8450278518/7thSession2022_05_14.rar.html"
+	},
+	{
+		"topic":"Request Module",
+		"date":"2022-05-21",
+		"time":{
+			"hour":"16",
+			"minute":"00"
+		},
+		"link":"https://s24.picofile.com/file/8450278734/8thSession2022_05_21.rar.html"
+	},
+	{
+		"topic":"Review some SQL questions",
+		"date":"2022-06-11",
+		"time":{
+			"hour":"16",
+			"minute":"00"
+		}
+	}
+]

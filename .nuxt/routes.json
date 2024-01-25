@@ -1,0 +1,16 @@
+[
+  {
+    "name": "sessions",
+    "path": "/sessions",
+    "component": "/Users/omidreza/Documents/winter2024-Databases/pages/sessions.vue",
+    "chunkName": "pages/sessions",
+    "_name": "_bdc5bd28"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/omidreza/Documents/winter2024-Databases/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_34db0113"
+  }
+]
