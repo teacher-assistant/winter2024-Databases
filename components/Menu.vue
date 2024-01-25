@@ -30,12 +30,6 @@ export default {
 					'icon':'book-reader',
 					'text':'Home page',
 					'image':'https://img.icons8.com/bubbles/1000/home-page.png'
-				},
-				{
-					'to':'/sessions/',
-					'icon':'calendar',
-					'text':'Sessions Calender',
-					'image':'https://img.icons8.com/bubbles/1000/calendar--v2.png'
 				}
 			]
 		}
