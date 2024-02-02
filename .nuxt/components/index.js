@@ -1,7 +1,6 @@
-export { default as Calendar } from '../../components/Calendar.vue'
-export { default as MainCard } from '../../components/MainCard.vue'
-export { default as Menu } from '../../components/Menu.vue'
-export { default as News } from '../../components/News.vue'
+export const MainCard = () => import('../../components/MainCard.vue' /* webpackChunkName: "components/main-card" */).then(c => wrapFunctional(c.default || c))
+export const Menu = () => import('../../components/Menu.vue' /* webpackChunkName: "components/menu" */).then(c => wrapFunctional(c.default || c))
+export const News = () => import('../../components/News.vue' /* webpackChunkName: "components/news" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
