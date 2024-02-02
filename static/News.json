@@ -1,10 +1,10 @@
 [
 	{
-		"body":"The sql file for the 1st session could be found in <a href='https://github.com/teacher-assistant/winter2024-Databases/tree/main/static/Session01/Lecture.sql'>this file</a>.",
-		"date":"2024-01-22"
-	},
-	{
 		"body":"The sql file for the 2nd session could be found in <a href='https://github.com/teacher-assistant/winter2024-Databases/tree/main/static/Session02/Lecture.sql'>this file</a>.",
 		"date":"2024-02-02"
+	},
+	{
+		"body":"The sql file for the 1st session could be found in <a href='https://github.com/teacher-assistant/winter2024-Databases/tree/main/static/Session01/Lecture.sql'>this file</a>.",
+		"date":"2024-01-22"
 	}
 ]
