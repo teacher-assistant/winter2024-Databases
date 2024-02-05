@@ -102,3 +102,135 @@ order by balance desc;
 select customers.id, customers.balance
 from customers
 order by balance asc;
+
+
+
+# Assignment
+drop table if exists actors, directors, movies, casts;
+
+CREATE TABLE actors (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  gender CHAR(1)
+);
+
+CREATE TABLE directors (
+  id INT PRIMARY KEY,
+  name VARCHAR(50)
+);
+
+CREATE TABLE movies (
+  id INT PRIMARY KEY,
+  title VARCHAR(50),
+  year INT,
+  runtime INT,
+  director_id INT,
+  FOREIGN KEY (director_id) REFERENCES directors(id)
+);
+
+CREATE TABLE casts (
+  actor_id INT,
+  movie_id INT,
+  FOREIGN KEY (actor_id) REFERENCES actors(id),
+  FOREIGN KEY (movie_id) REFERENCES movies(id)
+);
+
+INSERT INTO actors (id, name, gender) VALUES
+(1, 'Orson Welles', 'M'),
+(2, 'James Stewart', 'M'),
+(3, 'Kim Novak', 'F'),
+(4, 'Marlon Brando', 'M'),
+(5, 'Al Pacino', 'M'),
+(6, 'Janet Gaynor', 'F'),
+(7, 'Toshiro Mifune', 'M'),
+(8, 'Takashi Shimura', 'M'),
+(9, 'Robert De Niro', 'M'),
+(10, 'Jodie Foster', 'F'),
+(11, 'Bibi Andersson', 'F'),
+(12, 'Liv Ullmann', 'F'),
+(13, 'Marylin Monroe', 'F'),
+(14, 'Jack Lemmon', 'M'),
+(15, 'Humphrey Bogart', 'M'),
+(16, 'Ingrid Bergman', 'F'),
+(17, 'Clark Gable', 'M'),
+(18, 'Vivien Leigh', 'F'),
+(19, 'Leonardo Di Caprio', 'M'),
+(20, 'Kate Winslet', 'F');
+
+
+INSERT INTO directors (id, name) VALUES
+(1, 'Orson Welles'),
+(2, 'Alfred Hitchcock'),
+(3, 'Francis Ford Coppola'),
+(4, 'F.W. Murnau'),
+(5, 'Akira Kurusawa'),
+(6, 'Vittorio De Sica'),
+(7, 'Martin Scorsese'),
+(8, 'Ingmar Bergman'),
+(9, 'Billy Wilder'),
+(10, 'Michael Curtiz'),
+(11, 'James Cameron'),
+(12, 'Victor Fleming');
+
+
+INSERT INTO movies (id, title, year, runtime, director_id) VALUES
+(1, 'Citizen Kane', 1941, 119, 1),
+(2, 'Vertigo', 1958, 128, 2),
+(3, 'The Godfather', 1972, 175, 3),
+(4, 'Sunrise', 1927, 94, 4),
+(5, 'The Seven Samurai', 1954, 207, 5),
+(6, 'Bicycle Thieves', 1948, 89, 6),
+(7, 'Taxi Driver', 1976, 114, 7),
+(8, 'Persona', 1966, 83, 8),
+(9, 'Some Like it Hot', 1959, 121, 9),
+(10, 'Casablanca', 1942, 102, 10),
+(11, 'Sunset Boulevard', 1950, 110, 9),
+(12, 'Titanic', 1997, 195, 11),
+(13, 'Gone With the Wind', 1939, 221, 12);
+
+
+INSERT INTO casts (actor_id, movie_id) VALUES
+(1, 1),
+(2, 2),
+(3, 2),
+(4, 3),
+(5, 3),
+(6, 4),
+(7, 5),
+(8, 5),
+(9, 7),
+(10, 7),
+(11, 8),
+(12, 8),
+(13, 9),
+(14, 9),
+(15, 10),
+(16, 10),
+(19, 12),
+(20, 12),
+(17, 13),
+(18, 13);
+
+# Query 1
+
+# Query 2
+
+# Query 3
+
+# Query 4
+
+# Query 5
+
+# Query 6
+
+# Query 7
+
+# Query 8
+
+# Query 9
+
+# Query 10
+
+# Query 11
+
+# Query 12
