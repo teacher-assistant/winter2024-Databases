@@ -36,6 +36,9 @@ insert into orders(customer_id, amount, created_at) VALUES (1, 100, '2002-02-02 
 
 #Foreign key
 delete from customers where id=1;
+delete from orders where id in (1, 3, 6);
+
+select * from orders;
 
 select * from customers;
 select * from orders;
@@ -43,7 +46,7 @@ select * from orders;
 # where conditions
 select *
 from customers
-where balance > 2000 and country='Iran';
+where balance > 2000 and country<>'Iran';
 
 select *
 from customers
@@ -92,11 +95,12 @@ where balance is not null;
 # order by
 select customers.id, customers.balance
 from customers
-order by balance;
+order by balance desc;
 
 select customers.id, customers.balance
 from customers
-order by balance desc;
+where balance is not null
+order by balance;
 
 # not required
 select customers.id, customers.balance
@@ -212,21 +216,40 @@ INSERT INTO casts (actor_id, movie_id) VALUES
 (18, 13);
 
 # Query 1
+select *
+from movies
+where year between 1939 and 1945;
 
 # Query 2
-
+select avg(runtime)
+from movies;
 # Query 3
 
+select *
+from movies
+where runtime = (select max(runtime)
+from movies
+where year < 1980);
 # Query 4
-
+select distinct m.title
+from actors inner join casts c on actors.id = c.actor_id inner join movies m on c.movie_id = m.id
+where actors.name='Humphrey Bogart';
 # Query 5
-
+select movies.*, d.name as 'Director Name'
+from movies inner join directors d on movies.director_id = d.id;
 # Query 6
-
+select movies.*
+from movies inner join directors d on movies.director_id = d.id
+where d.name='Billy Wilder';
 # Query 7
-
+select d.name
+from movies inner join directors d on movies.director_id = d.id
+where year=(select min(year)
+from movies);
 # Query 8
-
+select distinct m.title
+from actors inner join casts c on actors.id = c.actor_id inner join movies m on c.movie_id = m.id
+where gender='F';
 # Query 9
 
 # Query 10
