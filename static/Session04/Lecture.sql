@@ -18,6 +18,7 @@ create table customers(
 insert into customers(first_name, last_name, email, password, country, balance) values
                         ('Omid Reza', 'Heidari', 'omid.orh@gmail.com', 'password1', 'Iran', 2000),
                         ('Ali', 'Amiri', 'ali@gmail.com', 'password2', 'Canada', 3000),
+                        ('Ali', 'Ahmad', 'ali.ahmad@gmail.com', 'password2', 'Iraq', 4500),
                         ('John', 'Nash', 'nash@gmail.com', 'password3', 'Denmark', 1400),
                         ('Pari', 'Amin', 'pr.am@gmail.com', 'password4', 'Iran', 4200),
                         ('David', 'Ahmad', 'dmp.mmd@gmail.com', 'password5', 'Canada', 300);
@@ -76,6 +77,25 @@ select orders.id, orders.amount
 from orders
 where amount between 350 and 550;
 
+
+# Like command (with wildcard)
+select customers.id, customers.first_name, customers.last_name ,customers.country
+from customers
+where country like '%da';
+
+select customers.id, customers.first_name, customers.last_name ,customers.country
+from customers
+where country like 'Ir%';
+
+select customers.id, customers.first_name, customers.last_name ,customers.country
+from customers
+where country like 'Ir_n';
+
+# Like command (without wildcard)
+select customers.id, customers.first_name, customers.last_name ,customers.country
+from customers
+where country like 'Canada';
+
 # See all of the customers
 select customers.id, customers.country, customers.first_name, customers.last_name
 from customers;
@@ -90,6 +110,3 @@ select customers.id, customers.country, customers.first_name, customers.last_nam
 from customers
 limit 2
 offset 1;
-
-
-
