@@ -1,11 +1,19 @@
 [
 	{
+		"body":"The lecture file for the 5th session could be found in <a href='https://github.com/teacher-assistant/winter2024-Databases/tree/main/static/Session05/Lecture.pdf'>this file</a>.",
+		"date":"2024-02-19"
+	},
+	{
+		"body":"The sql file for the 5th session could be found in <a href='https://github.com/teacher-assistant/winter2024-Databases/tree/main/static/Session05/Lecture.sql'>this file</a>.",
+		"date":"2024-02-19"
+	},
+	{
 		"body":"The lecture file for the 4th session could be found in <a href='https://github.com/teacher-assistant/winter2024-Databases/tree/main/static/Session04/Lecture.pdf'>this file</a>.",
-		"date":"2024-02-02"
+		"date":"2024-02-12"
 	},
 	{
 		"body":"The sql file for the 4th session could be found in <a href='https://github.com/teacher-assistant/winter2024-Databases/tree/main/static/Session04/Lecture.sql'>this file</a>.",
-		"date":"2024-02-02"
+		"date":"2024-02-12"
 	},
 	{
 		"body":"The lecture file for the 3rd session could be found in <a href='https://github.com/teacher-assistant/winter2024-Databases/tree/main/static/Session03/Lecture.pdf'>this file</a>.",
